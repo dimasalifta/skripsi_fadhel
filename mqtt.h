@@ -77,7 +77,7 @@ void sendToMQTT(String timestampp, float temperature, float humidity,
 
 
   // Format CSV: device_id,device_type,location,timestamp,temperature,humidity,...
-  String payload = "DIGASIS-00,ESP32,Kebon-Jeruk," + timestampp + "," +
+  String payload = "DIGASIS-01,ESP32,Kebon-Kopi," + timestampp + "," +
                    String(temperature, 2) + "," +
                    String(humidity, 2) + "," +
                    String(solar_voltage, 2) + "," +
