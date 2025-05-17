@@ -4,11 +4,11 @@
 const char* broker = "iot.digitalasistensi.com";
 const char* topic       = "bot";
 const char* topicInit      = "bot/stasiun_cuaca/init";
-const char* topicData      = "bot/stasiun_cuaci";
+const char* topicData      = "bot/stasiun_cuaca";
 
 const int jsonsize = 512;
 uint32_t lastReconnectAttempt = 0;
-const unsigned long mqttInterval = 10000;
+const unsigned long mqttInterval = 300000;
 unsigned long lastMqttSend = 0;
 PubSubClient  mqtt(client);
 
